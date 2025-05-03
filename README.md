@@ -84,3 +84,19 @@ Deploy the project on cloud platforms like Heroku, AWS, or Render for public acc
 🧾 Conclusion
 This project successfully demonstrates the use of machine learning and natural language processing to identify and classify fake news articles. It integrates multiple classification algorithms, evaluates their performance, and presents results through a simple web interface. With further enhancements, this system can be transformed into a robust tool for combating misinformation in real time.
 
+## 🚀 How to Run Locally
+
+```bash
+# 1. Clone this repo
+git clone https://github.com/your-username/fake-news-detection.git
+cd fake-news-detection
+
+# 2. Install required packages
+pip install -r requirements.txt
+
+# 3. Run the Flask server
+python app.py
+Then open your browser at http://127.0.0.1:5000
+
+
+
