@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Detection</title>
+    <style>
+        body {
+            background-color: rgb(230, 247, 250);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        label, textarea, input {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .predictions p {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fake News Detection</h1>
+        <form method="post">
+            <label for="news_text">Enter news text:</label><br>
+            <textarea id="news_text" name="news_text" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        {% if news_text %}
+        <div class="predictions">
+            <h2>Predictions for the entered text:</h2>
+            <p><strong>Logistic Regression:</strong> {{ lr_prediction }}</p>
+            <p><strong>Decision Tree:</strong> {{ dt_prediction }}</p>
+            <p><strong>Random Forest:</strong> {{ rf_prediction }}</p>
+            <p><strong>Naive Bayes:</strong> {{ nb_prediction }}</p>
+            <p><strong>SVM:</strong> {{ svm_prediction }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
