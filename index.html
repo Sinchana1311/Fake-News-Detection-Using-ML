@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Detection</title>
+    <style>
+        body {
+            font-family: Times, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .background-image {
+            background-image: url("https://imageio.forbes.com/specials-images/imageserve/600e55afcd20ae16e22d2456/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"); /* Corrected image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh; /* Adjusted height for the background image section */
+            width: 100%;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            max-width: 600px;
+            text-align: center;
+            margin: auto;
+            position: relative;
+            top: -8vh; /* Adjust position to overlap with background image */
+        }
+        h1 {
+            color: #333;
+        }
+        .description {
+            margin: 20px 0;
+        }
+        .predict-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .predict-button:hover {
+            background-color: #45a049;
+        }
+        .bottom-section {
+            margin-top: 50px; /* Space between container and bottom section */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    
+    <div class="bottom-section">
+        
+        <div class="container">
+            <h1>Fake News Detection</h1>
+            
+            <div class="description">
+                <p style="word-spacing: 5px;">This project aims to detect whether a given news article is real or fake using various machine learning models. The models are trained on a dataset where each article is labeled as either real or fake based on its content and features extracted from the text. The machine learning algorithms used include Logistic Regression, Decision Trees, Random Forests, Naive Bayes, and Support Vector Machines (SVM). Users can input a news article, and the system will predict whether it is likely to be real or fake based on the trained models' predictions.
+                </p>
+            </div>
+            <a href="{{ url_for('predict') }}" class="predict-button">Predict</a>
+        </div>
+    </div>
+</body>
+</html>
