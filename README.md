@@ -1,6 +1,6 @@
 This is a web-based fake news detection system built using machine learning algorithms. The project processes news text data to classify articles as real or fake, with a complete workflow from data preprocessing to model deployment using Flask and frontend technologies.
 
-🔧 Software Requirements
+Software Requirements
 Programming Language: Python
 
 Web Framework (Backend): Flask
@@ -19,12 +19,12 @@ nltk
 
 matplotlib, seaborn (for data visualization)
 
-📂 Dataset
+Dataset
 Source: Kaggle – Fake and Real News Dataset
 
 File Used: train.csv
 
-💡 Machine Learning Algorithms Used
+Machine Learning Algorithms Used
 Decision Tree Classifier
 
 Logistic Regression
@@ -35,7 +35,7 @@ Random Forest Classifier
 
 Naive Bayes Classifier
 
-⚙️ Project Workflow
+Project Workflow
 Data Loading (train.csv)
 
 Data Cleaning and Preprocessing
@@ -54,21 +54,21 @@ Model Prediction
 
 Model Evaluation
 
-*Accuracy
+Accuracy
 
-*Precision
+Precision
 
-*Recall
+Recall
 
-*F1 Score
+F1 Score
 
-*Classification Report
+Classification Report
 
-*Confusion Matrix
+Confusion Matrix
 
 Result Visualization
 
-🔮 Future Enhancements
+Future Enhancements
 Integrate deep learning models such as LSTM, GRU, or BERT for improved accuracy.
 
 Implement real-time news scraping from APIs (e.g., newsapi.org) for live predictions.
@@ -81,22 +81,22 @@ Improve UI/UX with modern frontend frameworks like React or Bootstrap.
 
 Deploy the project on cloud platforms like Heroku, AWS, or Render for public access.
 
-🧾 Conclusion
+Conclusion
 This project successfully demonstrates the use of machine learning and natural language processing to identify and classify fake news articles. It integrates multiple classification algorithms, evaluates their performance, and presents results through a simple web interface. With further enhancements, this system can be transformed into a robust tool for combating misinformation in real time.
 
-## 🚀 How to Run Locally
+How to Run Locally
 
-```bash
-# 1. Clone this repo
+1. Clone this repo
 git clone https://github.com/your-username/fake-news-detection.git
 cd fake-news-detection
 
-# 2. Install required packages
+2. Install required packages
 pip install -r requirements.txt
 
-# 3. Run the Flask server
+3. Run the Flask server
 python app.py
 Then open your browser at http://127.0.0.1:5000
+
 
 
 
